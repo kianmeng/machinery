@@ -104,7 +104,7 @@ defmodule MachineryTest do
       extra: "metadata",
       persist: true,
       after_transition: true,
-      guard_tranistion: true
+      guard_transition: true
     }
 
     {:ok, updated_struct} =
@@ -181,7 +181,7 @@ defmodule MachineryTest do
   end
 
   @tag :capture_log
-  test "Implict rescue on the guard clause internals should raise any other excepetion not strictly related to missing guard_tranistion/2 existence" do
+  test "Implicit rescue on the guard clause internals should raise any other exception not strictly related to missing guard_transition/2 existence" do
     wrong_struct = %TestStruct{my_state: "created", force_exception: true}
 
     assert_raise UndefinedFunctionError, fn ->
@@ -201,7 +201,7 @@ defmodule MachineryTest do
   end
 
   @tag :capture_log
-  test "Implict rescue on the callbacks internals should raise any other excepetion not strictly related to missing callbacks_fallback/2 existence" do
+  test "Implicit rescue on the callbacks internals should raise any other exception not strictly related to missing callbacks_fallback/2 existence" do
     wrong_struct = %TestStruct{my_state: "created", force_exception: true}
 
     assert_raise UndefinedFunctionError, fn ->

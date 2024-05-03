@@ -21,7 +21,7 @@ defmodule Machinery do
     defmodule YourProject.UserStateMachine do
       use Machinery,
         # The first state declared will be considered
-        # the intial state
+        # the initial state
         states: ["created", "partial", "complete"],
         transitions: %{
           "created" =>  ["partial", "complete"],

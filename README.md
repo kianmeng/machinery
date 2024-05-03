@@ -100,7 +100,7 @@ It takes the following arguments:
 - `struct`: The `struct` you want to transition to another state.
 - `state_machine_module`: The module that holds the state machine logic, where Machinery is imported.
 - `next_event`: `string` of the next state you want the struct to transition to.
-- *(optional)* `extra_metadata`: `map` with any extra data you might want to access on any of the sate machine functions triggered by the state change
+- *(optional)* `extra_metadata`: `map` with any extra data you might want to access on any of the state machine functions triggered by the state change
 
 ```elixir
 Machinery.transition_to(your_struct, YourStateMachine, "next_state")

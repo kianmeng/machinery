@@ -8,7 +8,7 @@ defmodule Machinery.Transitions do
   use GenServer
   alias Machinery.Transition
 
-  @not_declated_error "Transition to this state isn't declared."
+  @not_declared_error "Transition to this state isn't declared."
 
   def init(args) do
     {:ok, args}
@@ -55,7 +55,7 @@ defmodule Machinery.Transitions do
           {:ok, struct}
         end
       else
-        {:error, @not_declated_error}
+        {:error, @not_declared_error}
       end
 
     {:reply, response, states}

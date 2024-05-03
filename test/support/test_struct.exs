@@ -11,7 +11,7 @@ defmodule MachineryTest.TestStruct do
     field(:after_transition, :boolean)
     field(:persist, :boolean)
     field(:log, :boolean)
-    field(:guard_tranistion, :boolean)
+    field(:guard_transition, :boolean)
     timestamps()
   end
 
@@ -26,7 +26,7 @@ defmodule MachineryTest.TestStruct do
       :after_transition,
       :persist,
       :log,
-      :guard_tranistion
+      :guard_transition
     ])
   end
 end

@@ -40,11 +40,11 @@
 - Better treating the JSON return for the Dashboard - [Pull Request](https://github.com/joaomdmoura/machinery/pull/27)
 
 ## 0.12.0
-- Adding new toogle all btn and auto closing alerts - [Pull Request](https://github.com/joaomdmoura/machinery/pull/24)
+- Adding new toggle all btn and auto closing alerts - [Pull Request](https://github.com/joaomdmoura/machinery/pull/24)
 - Fixing Bug to rollback state transition on the Dashboard - [Pull Request](https://github.com/joaomdmoura/machinery/pull/25)
 
 ## 0.11.0
-- Adding a default config desabling the Machinery Dashboard
+- Adding a default config disabling the Machinery Dashboard
 - Making the Machinery Dashboard bigger
 - Enabling users to overwrite the desired state on Machinery Dashboard - [Pull Request](https://github.com/joaomdmoura/machinery/pull/21)
 - Adding the ability to change states form Dashboard - [Pull Request](https://github.com/joaomdmoura/machinery/pull/22)
